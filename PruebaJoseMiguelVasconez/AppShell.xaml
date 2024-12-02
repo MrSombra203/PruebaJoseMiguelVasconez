@@ -7,9 +7,18 @@
     Shell.FlyoutBehavior="Disabled"
     Title="PruebaJoseMiguelVasconez">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <Tab Title="Pagina Main"
+             Icon="https://miro.medium.com/v2/resize:fit:1200/0*CME_fwKZ7g75TRuj.jpg">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Pagia Usuario"
+             Icon="https://cdn.alfabetajuega.com/alfabetajuega/abj_public_files/multimedia/imagenes/alfabetajuega-praise-the-sun-1-291117.jpg">
+            <ShellContent ContentTemplate="{DataTemplate local:UsuarioPage}"/>
+        </Tab>
+        <Tab Title="Pagina Grid"
+             Icon="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/01/dark-souls-bosses-we-want-to-fight-for-the-first-time-again-split-image.jpg">
+            <ShellContent ContentTemplate="{DataTemplate local:GridPager}"/>
+        </Tab>
+    </TabBar>
 </Shell>
